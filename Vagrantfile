@@ -1,5 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/focal64"
+  config.vm.hostname = "sf-postgresql"
   config.vm.provision "shell", inline: <<-SHELL
 echo "Install deps"
 apt install -y gnupg gnupg2 gnupg1
